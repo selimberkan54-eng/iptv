@@ -1,50 +1,106 @@
 #EXTM3U x-tvg-url="http://www.teleguide.info/download/new3/jtv.zip"
 
 #EXTINF:-1 tvg-id="viasatexp" tvg-logo="https://i.ibb.co/vYm68Vz/viasat-explore.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Viasat Explore
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
 http://158.101.222.193:88/georgia_play.php?id=viasatexp
 
 #EXTINF:-1 tvg-id="viasathist" tvg-logo="https://i.ibb.co/M9X88Xz/viasat-history.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Viasat History
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
 http://158.101.222.193:88/georgia_play.php?id=viasathist
 
 #EXTINF:-1 tvg-id="viasatnat" tvg-logo="https://i.ibb.co/YyYxS8m/viasat-nature.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Viasat Nature
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
 http://158.101.222.193:88/georgia_play.php?id=viasatnat
 
 #EXTINF:-1 tvg-id="24techno" tvg-logo="https://i.ibb.co/L548W8r/24techno.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", 24 Техно
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
 http://158.101.222.193:88/georgia_play.php?id=24techno
 
-#EXTINF:-1 tvg-id="zoo" tvg-logo="https://i.ibb.co/Qn8B8Xz/zoo.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Зоопарк
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=zoo
+#EXTINF:-1 tvg-id="kinohit" tvg-logo="https://i.ibb.co/vYm68Vz/kinohit.png" group-title="KINO+📺", KinoHit HD
+http://87.246.54.249:8080/KinoHit/index.m3u8
 
-#EXTINF:-1 tvg-id="muzhskoy" tvg-logo="https://i.ibb.co/L9X88Xz/muzhskoy.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Мужской
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=muzhskoy
+#EXTINF:-1 tvg-id="kinokomediya" tvg-logo="https://i.ibb.co/M9X88Xz/kinokomediya.png" group-title="KINO+📺", КИНОКОМЕДИЯ
+http://158.101.222.193:88/georgia_play.php?id=kinokomediya
 
-#EXTINF:-1 tvg-id="auto24" tvg-logo="https://i.ibb.co/M9X88Xz/auto24.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Авто 24
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=auto24
+#EXTINF:-1 tvg-id="kinomiks" tvg-logo="https://i.ibb.co/YyYxS8m/kinomiks.png" group-title="KINO+📺", Киномикс HD
+http://93.170.254.17/Kinomiks/index.m3u8
 
-#EXTINF:-1 tvg-id="autoplus" tvg-logo="https://i.ibb.co/PzN88Xz/autoplus.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Авто Плюс
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=autoplus
+#EXTINF:-1 tvg-id="kinosemya" tvg-logo="https://i.ibb.co/L548W8r/kinosemya.png" group-title="KINO+📺", КИНОСЕМЬЯ
+http://158.101.222.193:88/georgia_play.php?id=kinosemya
 
-#EXTINF:-1 tvg-id="motorvision" tvg-logo="https://i.ibb.co/LzNfXmB/motorvision.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Motorvision TV
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
+#EXTINF:-1 tvg-id="kinosvidanie" tvg-logo="https://i.ibb.co/Qn8B8Xz/kinosvidanie.png" group-title="KINO+📺", КИНОСВИДАНИЕ
+http://158.101.222.193:88/georgia_play.php?id=kinosvidanie
 
-#EXTINF:-1 tvg-id="rybalka" tvg-logo="https://i.ibb.co/hC88Xz/rybalka.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Рыбалка
-http://iptv.prosto.tv:7000/ch344/video.m3u8
+#EXTINF:-1 tvg-id="muzhskoekino" tvg-logo="https://i.ibb.co/L9X88Xz/muzhskoe-kino.png" group-title="KINO+📺", Мужское Кино
+http://158.101.222.193:88/georgia_play.php?id=interesnoetv
 
-#EXTINF:-1 tvg-id="zdorovoe-tv" tvg-logo="https://i.ibb.co/hK7f9f7/zdorovoe-tv.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Здоровое ТВ (ЗЖ)
-http://185.57.68.33/40/index.m3u8
+#EXTINF:-1 tvg-id="v-kino-comedy" tvg-logo="https://i.ibb.co/M9X88Xz/v-kino-comedy.png" group-title="KINO+📺", V Kino COMEDY
+http://ukr.ukrainske.tv/493/keytvainua/video.m3u8
+
+#EXTINF:-1 tvg-id="viju_megahit" tvg-logo="https://i.ibb.co/M9X88Xz/viju-megahit.png" group-title="KINO+📺", Viju_Megahit HD
+http://87.246.54.249:8080/Viju_Megahit/index.m3u8
+
+#EXTINF:-1 tvg-id="tv1000rukino" tvg-logo="https://i.ibb.co/YyYxS8m/tv1000rukino.png" group-title="KINO+📺", viju TV1000 R Kino
+http://158.101.222.193:88/georgia_play.php?id=tv1000rukino
+
+#EXTINF:-1 tvg-id="tv1000action" tvg-logo="https://i.ibb.co/M9X88Xz/tv1000-action.png" group-title="KINO+📺", viju TV1000 action
+http://80.77.52.3/streams/media/tv1000action_720x576/index.m3u8
+
+#EXTINF:-1 tvg-id="illuzionplus" tvg-logo="https://i.ibb.co/hC88Xz/illuzionplus.png" group-title="KINO+📺", illuzion plus
+http://158.101.222.193:88/georgia_play.php?id=illuzionplus
+
+#EXTINF:-1 tvg-id="eurokino" tvg-logo="https://i.ibb.co/PzN88Xz/eurokino.png" group-title="KINO+📺", ЕВРОКИНО
+http://176.118.197.101/Evrokino/index.m3u8
+
+#EXTINF:-1 tvg-id="kinotv" tvg-logo="https://i.ibb.co/LzNfXmB/kinotv.png" group-title="KINO+📺", Kино TV
+http://vod.tuva.ru/kinotv/index.m3u8
+
+#EXTINF:-1 tvg-id="kineko" tvg-logo="https://i.ibb.co/hC88Xz/kineko.png" group-title="KINO+📺", Kineko
+http://31.148.48.15/Kineko/index.m3u8?token=iptv.org.ua
+
+#EXTINF:-1 tvg-id="star-cinema" tvg-logo="https://i.ibb.co/hK7f9f7/star-cinema.png" group-title="KINO+📺", STAR CINEMA HD
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4158
+
+#EXTINF:-1 tvg-id="cinema" tvg-logo="https://i.ibb.co/vYm68Vz/cinema.png" group-title="KINO+📺", CINEMA
+http://185.46.48.18:80/cinema/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="filmuadrama" tvg-logo="https://i.ibb.co/M9X88Xz/filmuadrama.png" group-title="KINO+📺", Film UA Drama
+http://88.99.215.227/FilmUADrama/index.m3u8
+
+#EXTINF:-1 tvg-id="amedia" tvg-logo="https://i.ibb.co/L548W8r/amedia1.png" group-title="KINO+📺", amedia1
+http://158.101.222.193:88/georgia_play.php?id=amedia
+
+#EXTINF:-1 tvg-id="amedia2" tvg-logo="https://i.ibb.co/Qn8B8Xz/amedia2.png" group-title="KINO+📺", amedia2
+http://158.101.222.193:88/georgia_play.php?id=amedia2
+
+#EXTINF:-1 tvg-id="amediahit" tvg-logo="https://i.ibb.co/L9X88Xz/amediahit.png" group-title="KINO+📺", Amedia Hit
+http://158.101.222.193:88/georgia_play.php?id=amediahit
+
+#EXTINF:-1 tvg-id="amediapremium" tvg-logo="https://i.ibb.co/M9X88Xz/amediapremium.png" group-title="KINO+📺", Amedia Premium
+http://158.101.222.193:88/georgia_play.php?id=amediapremium
+
+#EXTINF:-1 tvg-id="scifi" tvg-logo="https://i.ibb.co/PzN88Xz/scifi.png" group-title="KINO+📺", SCI-FI
+http://158.101.222.193:88/georgia_play.php?id=scifi
+
+#EXTINF:-1 tvg-id="kinoujas" tvg-logo="https://i.ibb.co/LzNfXmB/kinoujas.png" group-title="KINO+📺", КИНОУЖАС
+http://158.101.222.193:88/georgia_play.php?id=kinoujas
+
+#EXTINF:-1 tvg-id="nst" tvg-logo="https://i.ibb.co/hC88Xz/nst.png" group-title="KINO+📺", НСТ
+http://80.77.52.3/streams/media/nstv_720x576/index.m3u8
+
+#EXTINF:-1 tvg-id="tnt" tvg-logo="https://i.ibb.co/hK7f9f7/tnt.png" group-title="KINO+📺", TNT
+https://streaming.thestream.cyou/live/38-req_offset_28000000-req_window_0-1k_v5.m3u8
+
+#EXTINF:-1 tvg-id="tnt4" tvg-logo="https://i.ibb.co/vYm68Vz/tnt4.png" group-title="KINO+📺", TNT4 International+4
+https://cdn4.skygo.mn/live/disk1/TNT4/HLSv3-FTA/TNT4.m3u8
+
+#EXTINF:-1 tvg-id="sts" tvg-logo="https://i.ibb.co/vYm68Vz/sts.png" group-title="KINO+📺", STS International
+https://cdn4.skygo.mn/live/disk1/STS/HLSv3-FTA/STS.m3u8
+
+#EXTINF:-1 tvg-id="domashniy" tvg-logo="https://i.ibb.co/M9X88Xz/domashniy.png" group-title="KINO+📺", Domashniy International
+https://cdn4.skygo.mn/live/disk1/Domashni/HLSv3-FTA/Domashni.m3u8
+
+#EXTINF:-1 tvg-id="che" tvg-logo="https://i.ibb.co/YyYxS8m/che.png" group-title="KINO+📺", Че
+http://176.118.197.101/Che/index.m3u8
+
+#EXTINF:-1 tvg-id="tv3" tvg-logo="https://i.ibb.co/L548W8r/tv3.png" group-title="KINO+📺", ТВ3
+http://31.131.141.195:8000/play/a002/index.m3u8
+
+#EXTINF:-1 tvg-id="friday" tvg-logo="https://i.ibb.co/Qn8B8Xz/friday.png" group-title="KINO+📺", Пятница! International
+http://158.101.222.193:88/georgia_play.php?id=friday
