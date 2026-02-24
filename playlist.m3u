@@ -1,0 +1,50 @@
+#EXTM3U x-tvg-url="http://www.teleguide.info/download/new3/jtv.zip"
+
+#EXTINF:-1 tvg-id="viasatexp" tvg-logo="https://i.ibb.co/vYm68Vz/viasat-explore.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Viasat Explore
+#EXTVLCOPT:http-user-agent=VLC/3.0.18
+#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+http://158.101.222.193:88/georgia_play.php?id=viasatexp
+
+#EXTINF:-1 tvg-id="viasathist" tvg-logo="https://i.ibb.co/M9X88Xz/viasat-history.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Viasat History
+#EXTVLCOPT:http-user-agent=VLC/3.0.18
+#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+http://158.101.222.193:88/georgia_play.php?id=viasathist
+
+#EXTINF:-1 tvg-id="viasatnat" tvg-logo="https://i.ibb.co/YyYxS8m/viasat-nature.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Viasat Nature
+#EXTVLCOPT:http-user-agent=VLC/3.0.18
+#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+http://158.101.222.193:88/georgia_play.php?id=viasatnat
+
+#EXTINF:-1 tvg-id="24techno" tvg-logo="https://i.ibb.co/L548W8r/24techno.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", 24 Техно
+#EXTVLCOPT:http-user-agent=VLC/3.0.18
+#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+http://158.101.222.193:88/georgia_play.php?id=24techno
+
+#EXTINF:-1 tvg-id="zoo" tvg-logo="https://i.ibb.co/Qn8B8Xz/zoo.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Зоопарк
+#EXTVLCOPT:http-user-agent=VLC/3.0.18
+#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+http://158.101.222.193:88/georgia_play.php?id=zoo
+
+#EXTINF:-1 tvg-id="muzhskoy" tvg-logo="https://i.ibb.co/L9X88Xz/muzhskoy.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Мужской
+#EXTVLCOPT:http-user-agent=VLC/3.0.18
+#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+http://158.101.222.193:88/georgia_play.php?id=muzhskoy
+
+#EXTINF:-1 tvg-id="auto24" tvg-logo="https://i.ibb.co/M9X88Xz/auto24.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Авто 24
+#EXTVLCOPT:http-user-agent=VLC/3.0.18
+#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+http://158.101.222.193:88/georgia_play.php?id=auto24
+
+#EXTINF:-1 tvg-id="autoplus" tvg-logo="https://i.ibb.co/PzN88Xz/autoplus.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Авто Плюс
+#EXTVLCOPT:http-user-agent=VLC/3.0.18
+#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+http://158.101.222.193:88/georgia_play.php?id=autoplus
+
+#EXTINF:-1 tvg-id="motorvision" tvg-logo="https://i.ibb.co/LzNfXmB/motorvision.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Motorvision TV
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
+
+#EXTINF:-1 tvg-id="rybalka" tvg-logo="https://i.ibb.co/hC88Xz/rybalka.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Рыбалка
+http://iptv.prosto.tv:7000/ch344/video.m3u8
+
+#EXTINF:-1 tvg-id="zdorovoe-tv" tvg-logo="https://i.ibb.co/hK7f9f7/zdorovoe-tv.png" group-title="🔎 ПОЗНАВАТЕЛЬНЫЕ", Здоровое ТВ (ЗЖ)
+http://185.57.68.33/40/index.m3u8
