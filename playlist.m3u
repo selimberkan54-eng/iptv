@@ -1,169 +1,37 @@
-#EXTM3U x-tvg-url="http://www.teleguide.info/download/new3/jtv.zip" refresh="24"
+#EXTM3U x-tvg-url="http://www.teleguide.info/download/new3/jtv.zip" x-tvg-url="https://epg.it999.ru/pipe/jtv.xml.gz" 
 
-# ============== ПРИРОДА (МИР) ==============
-
-#EXTINF:-1 tvg-id="natgeo.ru" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/national-geographic.png" group-title="Природа (мир)",National Geographic HD
+#EXTINF:-1 tvg-id="National Geographic" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/nat-geo-hd.png" group-title="Познавательные",National Geographic HD
 http://188.237.47.212:6005
 
-#EXTINF:-1 tvg-id="natgeowild.ru" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/nat-geo-wild.png" group-title="Природа (мир)",Nat Geo Wild
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
+#EXTINF:-1 tvg-id="Nat Geo Wild" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/nat-geo-wild-hd.png" group-title="Познавательные",Nat Geo Wild HD
 http://185.164.82.18:9010/ykMHqK_NatGeoWild
 
-#EXTINF:-1 tvg-id="discovery.ru" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/discovery-channel.png" group-title="Природа (мир)",Discovery Channel
+#EXTINF:-1 tvg-id="Discovery Channel" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/discovery-channel-hd.png" group-title="Познавательные",Discovery Channel HD
 http://193.25.8.59:8000/dtx
 
-#EXTINF:-1 tvg-id="viasatnature.ru" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/viasat-nature.png" group-title="Природа (мир)",Viasat Nature
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+#EXTINF:-1 tvg-id="Viasat Nature" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/viasat-nature-hd.png" group-title="Познавательные",Viasat Nature HD
 http://158.101.222.193:88/georgia_play.php?id=viasatnat
 
-#EXTINF:-1 tvg-id="viasatexplore.ru" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/viasat-explore.png" group-title="Природа (мир)",Viasat Explore
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+#EXTINF:-1 tvg-id="Viasat Explore" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/viasat-explore-hd.png" group-title="Познавательные",Viasat Explore HD
 http://158.101.222.193:88/georgia_play.php?id=viasatexp
 
-#EXTINF:-1 tvg-id="viasathistory.ru" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/viasat-history.png" group-title="Природа (мир)",Viasat History
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
+#EXTINF:-1 tvg-id="Viasat History" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/viasat-history-hd.png" group-title="Познавательные",Viasat History HD
 http://158.101.222.193:88/georgia_play.php?id=viasathist
 
-# ============== ПРИРОДА (РОССИЯ) ==============
-
-#EXTINF:-1 tvg-id="moyaplaneta.ru" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/moya-planeta.png" group-title="Природа (Россия)",Моя Планета HD
+#EXTINF:-1 tvg-id="Моя Планета" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/moya-planeta-hd.png" group-title="Познавательные",Моя Планета HD
 http://185.46.16.239:8000/Planeta_HD
 
-#EXTINF:-1 tvg-id="zhivayaplaneta.ru" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/zhivaya-planeta.png" group-title="Природа (Россия)",Живая Планета
+#EXTINF:-1 tvg-id="Живая Планета" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/zhivaya-planeta-hd.png" group-title="Познавательные",Живая Планета HD
 http://185.46.16.239:8000/Zhivaya_Planeta
 
-#EXTINF:-1 tvg-id="nauka2.ru" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/nauka-20.png" group-title="Познавательные",Наука 2.0
+#EXTINF:-1 tvg-id="Наука" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/nauka-hd.png" group-title="Познавательные",Наука HD
 http://185.46.16.239:8000/Nauka_2.0
 
-#EXTINF:-1 tvg-id="terra.ru" tvg-logo="https://i.imgur.com/Jk9M3jL.png" group-title="Природа (Россия)",TERRA
+#EXTINF:-1 tvg-id="Terra" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/terra-hd.png" group-title="Познавательные",Terra HD
 http://193.25.8.59:8000/natgeo
 
-#EXTINF:-1 tvg-id="zoo.tv" tvg-logo="https://i.imgur.com/Z7xL9qW.png" group-title="Природа (Россия)",Зоопарк (Zoo TV)
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
+#EXTINF:-1 tvg-id="Zooпарк" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/zoopark.png" group-title="Познавательные",Zooпарк
 http://31.148.48.15/Zoo_TV/index.m3u8
 
-# ============== ТВОИ СТАРЫЕ КАНАЛЫ (КИНО) ==============
-
-#EXTINF:-1 tvg-id="kinohit" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kinohit.png" group-title="Кино",KinoHit HD
-http://87.246.54.249:8080/KinoHit/index.m3u8
-
-#EXTINF:-1 tvg-id="kinokomediya" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kinokomediya.png" group-title="Кино",Кинокомедия
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=kinokomediya
-
-#EXTINF:-1 tvg-id="kinomiks" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kinomiks.png" group-title="Кино",Киномикс HD
-http://93.170.254.17/Kinomiks/index.m3u8
-
-#EXTINF:-1 tvg-id="kinosemya" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kinosemya.png" group-title="Кино",Киносемья
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=kinosemya
-
-#EXTINF:-1 tvg-id="kinosvidanie" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kinosvidanie.png" group-title="Кино",Киносвидание
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=kinosvidanie
-
-#EXTINF:-1 tvg-id="muzhskoekino" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/muzhskoe-kino.png" group-title="Кино",Мужское Кино
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=interesnoetv
-
-#EXTINF:-1 tvg-id="v-kino-comedy" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/v-kino-comedy.png" group-title="Кино",V Kino Comedy
-http://ukr.ukrainske.tv/493/keytvainua/video.m3u8
-
-#EXTINF:-1 tvg-id="viju_megahit" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/viju-megahit.png" group-title="Кино",Viju Megahit HD
-http://87.246.54.249:8080/Viju_Megahit/index.m3u8
-
-#EXTINF:-1 tvg-id="tv1000rukino" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/tv1000-russkoe-kino.png" group-title="Кино",Viju TV1000 Русское
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=tv1000rukino
-
-#EXTINF:-1 tvg-id="tv1000action" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/tv1000-action.png" group-title="Кино",Viju TV1000 Action
-http://80.77.52.3/streams/media/tv1000action_720x576/index.m3u8
-
-#EXTINF:-1 tvg-id="illuzionplus" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/illuzion-plus.png" group-title="Кино",Illuzion Plus
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=illuzionplus
-
-#EXTINF:-1 tvg-id="eurokino" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/eurokino.png" group-title="Кино",Еврокино
-http://176.118.197.101/Evrokino/index.m3u8
-
-#EXTINF:-1 tvg-id="kinotv" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kinotv.png" group-title="Кино",Кино TV
-http://vod.tuva.ru/kinotv/index.m3u8
-
-#EXTINF:-1 tvg-id="kineko" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kineko.png" group-title="Кино",Kineko
-http://31.148.48.15/Kineko/index.m3u8?token=iptv.org.ua
-
-#EXTINF:-1 tvg-id="star-cinema" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/star-cinema.png" group-title="Кино",Star Cinema HD
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=4158
-
-#EXTINF:-1 tvg-id="cinema" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/cinema.png" group-title="Кино",Cinema
-http://185.46.48.18:80/cinema/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-id="filmuadrama" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/film-ua-drama.png" group-title="Кино",Film UA Drama
-http://88.99.215.227/FilmUADrama/index.m3u8
-
-#EXTINF:-1 tvg-id="amedia1" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/amedia-1.png" group-title="Кино",Amedia 1
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=amedia
-
-#EXTINF:-1 tvg-id="amedia2" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/amedia-2.png" group-title="Кино",Amedia 2
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=amedia2
-
-#EXTINF:-1 tvg-id="amediahit" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/amedia-hit.png" group-title="Кино",Amedia Hit
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=amediahit
-
-#EXTINF:-1 tvg-id="amediapremium" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/amedia-premium.png" group-title="Кино",Amedia Premium
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=amediapremium
-
-#EXTINF:-1 tvg-id="scifi" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/scifi.png" group-title="Кино",Sci-Fi
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=scifi
-
-#EXTINF:-1 tvg-id="kinoujas" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kinoujas.png" group-title="Кино",Киноужас
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=kinoujas
-
-#EXTINF:-1 tvg-id="nst" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/nst.png" group-title="Кино",НСТ
-http://80.77.52.3/streams/media/nstv_720x576/index.m3u8
-
-# ============== ТВОИ СТАРЫЕ КАНАЛЫ (РАЗВЛЕКАТЕЛЬНЫЕ) ==============
-
-#EXTINF:-1 tvg-id="tnt" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/tnt.png" group-title="Развлекательные",ТНТ
-https://streaming.thestream.cyou/live/38-req_offset_28000000-req_window_0-1k_v5.m3u8
-
-#EXTINF:-1 tvg-id="tnt4" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/tnt4.png" group-title="Развлекательные",ТНТ4 International
-https://cdn4.skygo.mn/live/disk1/TNT4/HLSv3-FTA/TNT4.m3u8
-
-#EXTINF:-1 tvg-id="sts" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/cts.png" group-title="Развлекательные",СТС International
-https://cdn4.skygo.mn/live/disk1/STS/HLSv3-FTA/STS.m3u8
-
-#EXTINF:-1 tvg-id="domashniy" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/domashniy.png" group-title="Развлекательные",Домашний International
-https://cdn4.skygo.mn/live/disk1/Domashni/HLSv3-FTA/Domashni.m3u8
-
-#EXTINF:-1 tvg-id="che" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/che.png" group-title="Развлекательные",Че
-http://176.118.197.101/Che/index.m3u8
-
-#EXTINF:-1 tvg-id="tv3" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/tv3.png" group-title="Развлекательные",ТВ3
-http://31.131.141.195:8000/play/a002/index.m3u8
-
-#EXTINF:-1 tvg-id="friday" tvg-logo="https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/pyatnica.png" group-title="Развлекательные",Пятница International
-#EXTVLCOPT:http-user-agent=VLC/3.0.18
-#EXTVLCOPT:http-referrer=http://158.101.222.193:88/
-http://158.101.222.193:88/georgia_play.php?id=friday
+#EXTINF:-1 tvg-id="Охота и рыбалка" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/ohota-i-rybalka-hd.png" group-title="Хобби",Охота и рыбалка HD
+http://31.148.48.15/Ohota_i_Rybalka_HD/index.m3u8
