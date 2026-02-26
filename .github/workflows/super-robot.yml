@@ -29,12 +29,17 @@ jobs:
         # Создаем скрипт внутри папки, чтобы он всегда был актуальным
         run: |
           cat > robot.py << 'EOF'
-import requests
-import re
-import json
-from urllib.parse import urlparse
-import time
+                - name: Create Super Robot Script
+        run: |
+          cat > robot.py << 'EOF'
+          import requests
+          import re
+          import json
+          from urllib.parse import urlparse
+          import time
 
+          # ... и весь остальной код тоже со смещением ...
+          EOF
 # Читаем список нужных каналов
 try:
     with open('channels.txt', 'r', encoding='utf-8') as f:
