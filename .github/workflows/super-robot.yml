@@ -22,7 +22,7 @@ jobs:
 
       - name: Create and run Super Robot
         run: |
-          cat > super_robot.py <<EOF
+          python <<EOF
 import requests
 import re
 
@@ -63,9 +63,8 @@ with open('playlist.m3u', 'w', encoding='utf-8') as f:
     for name, url in found.items():
         f.write(f'#EXTINF:-1 group-title="Каналы",{name}\n{url}\n\n')
 
-print(f'✅ Готово! Найдено каналов: {len(found)}')
+print(f'✅ Найдено каналов: {len(found)}')
 EOF
-          python super_robot.py
 
       - name: Commit and push
         run: |
