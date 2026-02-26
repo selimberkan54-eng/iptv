@@ -33,8 +33,7 @@ sources = [
     'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u',
     'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/kz.m3u',
     'https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8',
-    'https://raw.githubusercontent.com/qazaqiptv/qazaqiptv.github.io/main/iptv.m3u',
-    'https://teleguide.info/download/new3/iptv.m3u'
+    'https://raw.githubusercontent.com/qazaqiptv/qazaqiptv.github.io/main/iptv.m3u'
 ]
 
 found = {}
@@ -51,10 +50,8 @@ for url in sources:
                 m = re.search(r',([^,]+)$', lines[i])
                 if m and i+1 < len(lines) and not lines[i+1].startswith('#'):
                     name = m.group(1).strip()
-                    name_clean = re.sub(r'[^\w\s-]', '', name).strip().lower()
                     for ch in channels:
-                        ch_clean = re.sub(r'[^\w\s-]', '', ch).strip().lower()
-                        if ch_clean in name_clean or name_clean in ch_clean:
+                        if ch.lower() in name.lower() or name.lower() in ch.lower():
                             if ch not in found:
                                 found[ch] = lines[i+1].strip()
             i += 1
@@ -64,11 +61,7 @@ for url in sources:
 with open('playlist.m3u', 'w', encoding='utf-8') as f:
     f.write('#EXTM3U x-tvg-url="http://www.teleguide.info/download/new3/jtv.zip"\n\n')
     for name, url in found.items():
-        f.write(f'#EXTINF:-1 group-title="Каналы",{name}\n')
-        if 'georgia_play' in url:
-            f.write('#EXTVLCOPT:http-user-agent=VLC/3.0.18\n')
-            f.write('#EXTVLCOPT:http-referrer=http://158.101.222.193:88/\n')
-        f.write(f'{url}\n\n')
+        f.write(f'#EXTINF:-1 group-title="Каналы",{name}\n{url}\n\n')
 
 print(f'✅ Готово! Найдено каналов: {len(found)}')
 EOF
