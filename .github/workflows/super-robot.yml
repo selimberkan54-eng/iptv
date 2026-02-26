@@ -2,9 +2,8 @@ name: Super IPTV Robot
 
 on:
   schedule:
-    # Каждые 6 часов
     - cron: '0 */6 * * *'
-  workflow_dispatch:  # Можно запускать вручную
+  workflow_dispatch:
 
 jobs:
   build:
@@ -19,248 +18,65 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: |
-          pip install requests
-          pip install m3u8
+        run: pip install requests
 
-      - name: Create Super Robot
+      - name: Create and run Super Robot
         run: |
-          cat > super_robot.py << 'EOF'
+          cat > super_robot.py <<EOF
 import requests
 import re
-import json
-from urllib.parse import urlparse
-import time
 
-# ============== ТВОЙ СПИСОК КАНАЛОВ ==============
 with open('channels.txt', 'r', encoding='utf-8') as f:
-    MY_CHANNELS = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+    channels = [line.strip() for line in f if line.strip()]
 
-print(f"🎯 Ищу каналы: {len(MY_CHANNELS)}")
-
-# ============== ИСТОЧНИКИ ДЛЯ ПОИСКА ==============
-SOURCES = [
-    # GitHub репозитории
-    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u",
-    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/kz.m3u",
-    "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
-    "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u",
-    "https://raw.githubusercontent.com/otomi-corp/iptv/main/playlist.m3u",
-    "https://raw.githubusercontent.com/ForceFM/iptv/main/playlist.m3u",
-    "https://raw.githubusercontent.com/EvgenyChernyshev/iptv/master/iptv.m3u",
-    
-    # Казахстанские источники
-    "https://raw.githubusercontent.com/qazaqiptv/qazaqiptv.github.io/main/iptv.m3u",
-    "https://raw.githubusercontent.com/aitym/iptv/main/kz.m3u",
-    
-    # Спутниковые источники
-    "https://raw.githubusercontent.com/andrey-tsarsky/edem-iptv/master/edem_all_channels.m3u",
-    
-    # Публичные плейлисты
-    "https://teleguide.info/download/new3/iptv.m3u",
+sources = [
+    'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u',
+    'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/kz.m3u',
+    'https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8',
+    'https://raw.githubusercontent.com/qazaqiptv/qazaqiptv.github.io/main/iptv.m3u',
+    'https://teleguide.info/download/new3/iptv.m3u'
 ]
 
-# ============== ЛОГОТИПЫ ==============
-LOGOS = {
-    "national geographic": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/national-geographic.png",
-    "nat geo wild": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/nat-geo-wild.png",
-    "discovery": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/discovery-channel.png",
-    "animal planet": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/animal-planet.png",
-    "viasat nature": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/viasat-nature.png",
-    "viasat explore": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/viasat-explore.png",
-    "viasat history": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/viasat-history.png",
-    "моя планета": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/moya-planeta.png",
-    "живая планета": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/zhivaya-planeta.png",
-    "наука 2.0": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/nauka-20.png",
-    "terra": "https://i.imgur.com/Jk9M3jL.png",
-    "зоопарк": "https://i.imgur.com/Z7xL9qW.png",
-    "первый канал": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/1tv.png",
-    "россия 1": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/russia-1.png",
-    "россия 24": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/russia-24.png",
-    "нтв": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/ntv.png",
-    "рбк": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/rbc.png",
-    "мир": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/mir.png",
-    "мир 24": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/mir-24.png",
-    "kinohit": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kinohit.png",
-    "кинокомедия": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kinokomediya.png",
-    "киномикс": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/kinomiks.png",
-    "tv1000": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/tv1000.png",
-    "viju tv1000 русское": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/tv1000-russkoe-kino.png",
-    "viju tv1000 action": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/tv1000-action.png",
-    "иллюзион+": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/illuzion-plus.png",
-    "еврокино": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/eurokino.png",
-    "amedia 1": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/amedia-1.png",
-    "amedia 2": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/amedia-2.png",
-    "amedia hit": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/amedia-hit.png",
-    "amedia premium": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/amedia-premium.png",
-    "paramount channel": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/paramount-channel.png",
-    "mgm channel": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/mgm-channel.png",
-    "матч тв": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/match-tv.png",
-    "матч арена": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/match-arena.png",
-    "матч игра": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/match-igra.png",
-    "матч футбол 1": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/match-football-1.png",
-    "матч футбол 2": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/match-football-2.png",
-    "матч футбол 3": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/match-football-3.png",
-    "eurosport 1": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/eurosport-1.png",
-    "eurosport 2": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/eurosport-2.png",
-    "история": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/istoriya.png",
-    "365 дней тв": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/365-dney.png",
-    "da vinci learning": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/da-vinci-learning.png",
-    "охота и рыбалка": "https://i.imgur.com/hC88Xz.png",
-    "дикий": "https://i.imgur.com/hK7f9f7.png",
-}
+found = {}
 
-# ============== ПОИСК ПО ИСТОЧНИКАМ ==============
-found_channels = {}
-
-def clean_channel_name(name):
-    """Очищает название канала от мусора"""
-    name = re.sub(r'\s+', ' ', name)
-    name = re.sub(r'[^\w\s-]', '', name)
-    return name.strip().lower()
-
-def check_quality(url):
-    """Проверяет качество видео (простая эвристика)"""
-    if '1080' in url or 'fullhd' in url.lower() or 'fhd' in url.lower():
-        return '1080p'
-    elif '720' in url:
-        return '720p'
-    elif '480' in url:
-        return '480p'
-    else:
-        return 'unknown'
-
-print("🔍 Начинаю поиск...")
-
-for source in SOURCES:
+for url in sources:
     try:
-        print(f"📡 Проверяю: {source}")
-        response = requests.get(source, timeout=10)
-        if response.status_code == 200:
-            content = response.text
-            
-            # Парсим M3U
-            lines = content.split('\n')
-            i = 0
-            while i < len(lines):
-                line = lines[i]
-                if line.startswith('#EXTINF:'):
-                    # Ищем название канала
-                    channel_info = line
-                    channel_name_match = re.search(r',([^,]+)$', line)
-                    if channel_name_match:
-                        channel_name = channel_name_match.group(1).strip()
-                        clean_name = clean_channel_name(channel_name)
-                        
-                        # Проверяем, есть ли такой канал в нашем списке
-                        for my_channel in MY_CHANNELS:
-                            my_clean = clean_channel_name(my_channel)
-                            if my_clean in clean_name or clean_name in my_clean:
-                                # Нашли! Смотрим следующую строку (ссылку)
-                                if i + 1 < len(lines) and not lines[i+1].startswith('#'):
-                                    url = lines[i+1].strip()
-                                    
-                                    # Проверяем качество
-                                    quality = check_quality(url)
-                                    
-                                    # Сохраняем
-                                    if my_channel not in found_channels:
-                                        found_channels[my_channel] = {
-                                            'name': my_channel,
-                                            'url': url,
-                                            'quality': quality,
-                                            'source': source
-                                        }
-                                        print(f"✅ Нашёл: {my_channel} [{quality}]")
-                i += 1
-    except Exception as e:
-        print(f"❌ Ошибка с {source}: {e}")
+        r = requests.get(url, timeout=10)
+        if r.status_code != 200:
+            continue
+        lines = r.text.split('\n')
+        i = 0
+        while i < len(lines):
+            if lines[i].startswith('#EXTINF:'):
+                m = re.search(r',([^,]+)$', lines[i])
+                if m and i+1 < len(lines) and not lines[i+1].startswith('#'):
+                    name = m.group(1).strip()
+                    name_clean = re.sub(r'[^\w\s-]', '', name).strip().lower()
+                    for ch in channels:
+                        ch_clean = re.sub(r'[^\w\s-]', '', ch).strip().lower()
+                        if ch_clean in name_clean or name_clean in ch_clean:
+                            if ch not in found:
+                                found[ch] = lines[i+1].strip()
+            i += 1
+    except:
+        continue
 
-# ============== СОЗДАЁМ ГОТОВЫЙ ПЛЕЙЛИСТ ==============
-print(f"\n🎯 Всего найдено: {len(found_channels)} каналов")
-
-playlist_lines = []
-playlist_lines.append('#EXTM3U x-tvg-url="http://www.teleguide.info/download/new3/jtv.zip" refresh="24"\n')
-
-# Группируем каналы
-groups = {
-    'Природа (мир)': ['national geographic', 'nat geo wild', 'discovery', 'animal planet', 'viasat nature', 'viasat explore'],
-    'Природа (Россия)': ['моя планета', 'живая планета', 'наука 2.0', 'terra', 'зоопарк'],
-    'Новости': ['первый канал', 'россия 1', 'россия 24', 'нтв', 'рбк', 'мир', 'мир 24'],
-    'Кино': ['kinohit', 'кинокомедия', 'киномикс', 'tv1000', 'viju tv1000 русское', 'viju tv1000 action', 'иллюзион+', 'еврокино', 'amedia', 'paramount', 'mgm'],
-    'Спорт': ['матч тв', 'матч арена', 'матч игра', 'матч футбол', 'eurosport'],
-    'Познавательные': ['история', 'viasat history', '365 дней тв', 'da vinci learning', 'охота и рыбалка', 'дикий']
-}
-
-# Сортируем по группам
-added = set()
-for group_name, keywords in groups.items():
-    group_channels = []
-    for ch_name, ch_data in found_channels.items():
-        ch_lower = ch_name.lower()
-        for keyword in keywords:
-            if keyword in ch_lower and ch_name not in added:
-                group_channels.append(ch_data)
-                added.add(ch_name)
-                break
-    
-    if group_channels:
-        playlist_lines.append(f'\n# ============== {group_name} ==============\n')
-        for ch in group_channels:
-            logo_url = LOGOS.get(ch['name'].lower(), 'https://i.imgur.com/default.png')
-            tvg_id = ch['name'].lower().replace(' ', '_')
-            
-            extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo_url}" group-title="{group_name}",{ch["name"]}'
-            playlist_lines.append(extinf)
-            
-            # Добавляем User-Agent если нужно
-            if 'georgia_play' in ch['url']:
-                playlist_lines.append('#EXTVLCOPT:http-user-agent=VLC/3.0.18')
-                playlist_lines.append('#EXTVLCOPT:http-referrer=http://158.101.222.193:88/')
-            
-            playlist_lines.append(ch['url'])
-            playlist_lines.append('')
-
-# Добавляем оставшиеся каналы (без группы)
-others = [ch for ch_name, ch in found_channels.items() if ch_name not in added]
-if others:
-    playlist_lines.append('\n# ============== Другие каналы ==============\n')
-    for ch in others:
-        logo_url = LOGOS.get(ch['name'].lower(), 'https://i.imgur.com/default.png')
-        tvg_id = ch['name'].lower().replace(' ', '_')
-        
-        extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo_url}" group-title="Другие",{ch["name"]}'
-        playlist_lines.append(extinf)
-        
-        if 'georgia_play' in ch['url']:
-            playlist_lines.append('#EXTVLCOPT:http-user-agent=VLC/3.0.18')
-            playlist_lines.append('#EXTVLCOPT:http-referrer=http://158.101.222.193:88/')
-        
-        playlist_lines.append(ch['url'])
-        playlist_lines.append('')
-
-# Сохраняем
 with open('playlist.m3u', 'w', encoding='utf-8') as f:
-    f.write('\n'.join(playlist_lines))
+    f.write('#EXTM3U x-tvg-url="http://www.teleguide.info/download/new3/jtv.zip"\n\n')
+    for name, url in found.items():
+        f.write(f'#EXTINF:-1 group-title="Каналы",{name}\n')
+        if 'georgia_play' in url:
+            f.write('#EXTVLCOPT:http-user-agent=VLC/3.0.18\n')
+            f.write('#EXTVLCOPT:http-referrer=http://158.101.222.193:88/\n')
+        f.write(f'{url}\n\n')
 
-print(f"\n✅ Плейлист создан! Каналов: {len(found_channels)}")
-print(f"📁 Сохранён в playlist.m3u")
-
-# Показываем статистику
-from collections import Counter
-quals = [ch['quality'] for ch in found_channels.values()]
-qual_stats = Counter(quals)
-print(f"\n📊 Качество:")
-for q, count in qual_stats.items():
-    print(f"  {q}: {count}")
+print(f'✅ Готово! Найдено каналов: {len(found)}')
 EOF
-
-      - name: Run Super Robot
-        run: python super_robot.py
+          python super_robot.py
 
       - name: Commit and push
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add playlist.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Super Robot: обновление плейлиста $(date +'%Y-%m-%d %H:%M')" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m '🤖 Auto update' && git push)
