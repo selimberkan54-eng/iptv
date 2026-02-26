@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # ОБЯЗАТЕЛЬНО: даем права на запись в репозиторий
     permissions:
       contents: write
     
@@ -22,85 +21,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: |
-          pip install requests
-
-      - name: Create Super Robot Script
-        # Создаем скрипт внутри папки, чтобы он всегда был актуальным
-        run: |
-          cat > robot.py << 'EOF'
-                - name: Create Super Robot Script
-        run: |
-          cat > robot.py << 'EOF'
-          import requests
-          import re
-          import json
-          from urllib.parse import urlparse
-          import time
-
-          # ... и весь остальной код тоже со смещением ...
-          EOF
-# Читаем список нужных каналов
-try:
-    with open('channels.txt', 'r', encoding='utf-8') as f:
-        MY_CHANNELS = [line.strip() for line in f if line.strip() and not line.startswith('#')]
-except FileNotFoundError:
-    MY_CHANNELS = ["Первый канал", "Россия 1", "НТВ"] # Заглушка, если файла нет
-
-print(f"🎯 Ищу каналы: {len(MY_CHANNELS)}")
-
-SOURCES = [
-    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u",
-    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/kz.m3u",
-    "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
-    "https://raw.githubusercontent.com/otomi-corp/iptv/main/playlist.m3u",
-    "https://teleguide.info/download/new3/iptv.m3u"
-]
-
-LOGOS = {
-    "первый канал": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/1tv.png",
-    "россия 1": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/russia-1.png",
-    "нтв": "https://cdn.jsdelivr.net/gh/iptv-org/logo/ru/tv/ntv.png"
-}
-
-found_channels = {}
-
-def clean_channel_name(name):
-    name = re.sub(r'\s+', ' ', name)
-    name = re.sub(r'[^\w\s-]', '', name)
-    return name.strip().lower()
-
-for source in SOURCES:
-    try:
-        print(f"📡 Проверяю: {source}")
-        response = requests.get(source, timeout=15)
-        if response.status_code == 200:
-            lines = response.text.split('\n')
-            for i in range(len(lines)):
-                if lines[i].startswith('#EXTINF:'):
-                    match = re.search(r',([^,]+)$', lines[i])
-                    if match:
-                        raw_name = match.group(1).strip()
-                        clean_n = clean_channel_name(raw_name)
-                        for my_ch in MY_CHANNELS:
-                            if clean_channel_name(my_ch) in clean_n:
-                                if i + 1 < len(lines) and lines[i+1].startswith('http'):
-                                    url = lines[i+1].strip()
-                                    if my_ch not in found_channels:
-                                        found_channels[my_ch] = {'name': my_ch, 'url': url}
-                                        print(f"✅ Нашёл: {my_ch}")
-    except Exception as e:
-        print(f"❌ Ошибка: {e}")
-
-# Сохраняем результат
-playlist = ["#EXTM3U\n"]
-for name, data in found_channels.items():
-    logo = LOGOS.get(name.lower(), "")
-    playlist.append(f'#EXTINF:-1 tvg-logo="{logo}",{name}\n{data["url"]}\n')
-
-with open('playlist.m3u', 'w', encoding='utf-8') as f:
-    f.write("".join(playlist))
-EOF
+        run: pip install requests
 
       - name: Run Robot
         run: python robot.py
@@ -110,4 +31,4 @@ EOF
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add playlist.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Обновление плейлиста $(date +'%Y-%m-%d %H:%M')" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Update" && git push)
