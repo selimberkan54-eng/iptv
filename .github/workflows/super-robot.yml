@@ -1,30 +1,22 @@
 name: Automated IPTV Playlist Maintenance
-
 on:
   schedule:
-    - cron: '0 */6 * * *' # Run every 6 hours
-  workflow_dispatch: # Allow manual trigger
-
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-
       - name: Install dependencies
         run: pip install requests
-
       - name: Run IPTV playlist maintenance script
-        id: run_script
         run: python robot.py
-
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
