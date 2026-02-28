@@ -1,1 +1,35 @@
+#EXTM3U
 
+#INVALID_STREAM_LINK
+#EXTINF:-1 tvg-id="testador_iptv" tvg-name="Testador IPTV" tvg-logo="" group-title="Общие",Testador IPTV
+https://play.google.com/store/apps/details?id=thalles.org.testadoriptv
+
+#EXTINF:-1 tvg-id="pyatnitsa" tvg-name="Пятница!" tvg-logo="https://i.imgur.com/UfmlXxe.png" group-title="Общие",Пятница!
+https://vod.tuva.ru/friday/index.m3u8
+
+#EXTINF:-1 tvg-id="protv" tvg-name="Pro100TV" tvg-logo="https://i.imgur.com/YfQEflM.png" group-title="Кино",Pro100TV
+https://sirius.greenhosting.ru/Pro100tvRu/video.m3u8
+
+#EXTINF:-1 tvg-id="dtr_zona_2" tvg-name="DTR Zona 2" tvg-logo="https://i.imgur.com/odKqEZu.png" group-title="Кино",DTR Zona 2
+https://kino-stream.online/hls/DTRZONA2.m3u8
+
+#EXTINF:-1 tvg-id="dtr_zona_1" tvg-name="DTR Zona 1" tvg-logo="https://i.imgur.com/ddPUnpQ.png" group-title="Кино",DTR Zona 1
+https://kino-stream.online/hls/DTRZONA1.m3u8
+
+#EXTINF:-1 tvg-id="otv_primorye" tvg-name="ОТВ Приморье" tvg-logo="https://i.imgur.com/2zd8trG.png" group-title="Общие",ОТВ Приморье
+https://jz2lo90hnpy.a.trbcdn.net/livemaster/yo8gr_live-5gorrrfpouq.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="poehali" tvg-name="Поехали!" tvg-logo="https://i.imgur.com/ZNCpbII.png" group-title="Познавательные",Поехали!
+http://31.148.48.15/Poehali/index.m3u8
+
+#EXTINF:-1 tvg-id="tvoe_tv" tvg-name="Твое TV" tvg-logo="https://i.imgur.com/kKAM7dP.png" group-title="Общие",Твое TV
+http://tvoetv.space:8080/tvoetv/index.m3u8
+
+#EXTINF:-1 tvg-id="che" tvg-name="Че!" tvg-logo="https://i.imgur.com/ZOcDGpB.png" group-title="Общие",Че!
+http://31.148.48.15/Che/index.m3u8
+
+#EXTINF:-1 tvg-id="etv_plus" tvg-name="ETV+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a2/ETV%2B_logo.png" group-title="Общие",ETV+
+https://sb.err.ee/live/etvpluss.m3u8
+
+#EXTINF:-1 tvg-id="zor_tv" tvg-name="Zo'r TV" tvg-logo="https://i.imgur.com/NuzyhVM.png" group-title="Общие",Zo'r TV
+https://stream8.cinerama.uz/1016/tracks-v1a1/mono.m3u8
