@@ -2,13 +2,12 @@ name: Automated IPTV Playlist Maintenance
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Запуск каждые 6 часов
-  workflow_dispatch: # Позволяет запускать вручную
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -22,7 +21,6 @@ jobs:
       run: pip install requests
 
     - name: Run IPTV playlist maintenance script
-      id: run_script
       run: python robot.py
 
     - name: Commit and push changes
