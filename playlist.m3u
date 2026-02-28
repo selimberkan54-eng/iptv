@@ -1,9 +1,5 @@
 #EXTM3U
 
-#INVALID_STREAM_LINK
-#EXTINF:-1 tvg-id="testador_iptv" tvg-name="Testador IPTV" tvg-logo="" group-title="Общие",Testador IPTV
-https://play.google.com/store/apps/details?id=thalles.org.testadoriptv
-
 #EXTINF:-1 tvg-id="pyatnitsa" tvg-name="Пятница!" tvg-logo="https://i.imgur.com/UfmlXxe.png" group-title="Общие",Пятница!
 https://vod.tuva.ru/friday/index.m3u8
 
