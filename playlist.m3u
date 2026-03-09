@@ -1,31 +1,48 @@
-#EXTM3U
+#EXTM3U url-tvg="https://epg.it999.ru/edem.xml.gz", #EXTM3U url-tvg="https://iptvx.one/epg/epg.xml.gz"
 
-#EXTINF:-1 tvg-id="pyatnitsa" tvg-name="Пятница!" tvg-logo="https://i.imgur.com/UfmlXxe.png" group-title="Общие",Пятница!
-https://vod.tuva.ru/friday/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RUSX0rX.png" group-title="Федеральные", Первый канал
+https://edge1.1internet.tv/dash-live2/streams/1tv-dvr/1tvdash.mpd
 
-#EXTINF:-1 tvg-id="protv" tvg-name="Pro100TV" tvg-logo="https://i.imgur.com/YfQEflM.png" group-title="Кино",Pro100TV
-https://sirius.greenhosting.ru/Pro100tvRu/video.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="Федеральные",Россия 1
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8
 
-#EXTINF:-1 tvg-id="dtr_zona_2" tvg-name="DTR Zona 2" tvg-logo="https://i.imgur.com/odKqEZu.png" group-title="Кино",DTR Zona 2
-https://kino-stream.online/hls/DTRZONA2.m3u8
+#EXTINF:-1 tvg-logo="https://iptvx.one/picons/rossia-24.png" group-title="Информационные", Россия 24
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia24-hd/720p.m3u8
 
-#EXTINF:-1 tvg-id="dtr_zona_1" tvg-name="DTR Zona 1" tvg-logo="https://i.imgur.com/ddPUnpQ.png" group-title="Кино",DTR Zona 1
-https://kino-stream.online/hls/DTRZONA1.m3u8
+#EXTINF:-1 tvg-logo="https://iptvx.one/picons/kultura.png" group-title="Познавательные", Россия К
+http://vgtrkregion-reg.cdnvideo.ru/vgtrk/4/kultura-hd/index.m3u8
 
-#EXTINF:-1 tvg-id="otv_primorye" tvg-name="ОТВ Приморье" tvg-logo="https://i.imgur.com/2zd8trG.png" group-title="Общие",ОТВ Приморье
-https://jz2lo90hnpy.a.trbcdn.net/livemaster/yo8gr_live-5gorrrfpouq.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="http://rafail1982.uz/logo/НТВ.png" group-title="Федеральные", НТВ
+https://stream8.cinerama.uz/1023/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-id="poehali" tvg-name="Поехали!" tvg-logo="https://i.imgur.com/ZNCpbII.png" group-title="Познавательные",Поехали!
-http://31.148.48.15/Poehali/index.m3u8
+#EXTINF:-1 tvg-id="tvcentr" tvg-name="ТВ Центр" tvg-logo="https://iptvx.one/picons/tvcentr.png" group-title="Федеральные",ТВ Центр
+https://tvc-hls.cdnvideo.ru/tvc-res/smil:vd9221.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="tvoe_tv" tvg-name="Твое TV" tvg-logo="https://i.imgur.com/kKAM7dP.png" group-title="Общие",Твое TV
-http://tvoetv.space:8080/tvoetv/index.m3u8
+#EXTINF:-1 tvg-logo="https://iptvx.one/picons/zvezda.png" group-title="Федеральные",  Звезда HD
+http://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist_hdhigh.m3u8
 
-#EXTINF:-1 tvg-id="che" tvg-name="Че!" tvg-logo="https://i.imgur.com/ZOcDGpB.png" group-title="Общие",Че!
-http://31.148.48.15/Che/index.m3u8
+#EXTINF:-1 tvg-logo="https://iptvx.one/picons/mir.png" group-title="Федеральные", Мир
+http://a0925677.xsph.ru/hls/T2/CH_MIRHD.m3u8
 
-#EXTINF:-1 tvg-id="etv_plus" tvg-name="ETV+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a2/ETV%2B_logo.png" group-title="Общие",ETV+
-https://sb.err.ee/live/etvpluss.m3u8
+#EXTINF:-1 tvg-id="360news" tvg-name="360новости" tvg-logo="https://iptvx.one/picons/360-news.png" group-title="Информационные", 360° Новости
+https://live-vgtrksmotrim.cdnvideo.ru/vgtrksmotrim/smotrim-live-03-srt.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="zor_tv" tvg-name="Zo'r TV" tvg-logo="https://i.imgur.com/NuzyhVM.png" group-title="Общие",Zo'r TV
-https://stream8.cinerama.uz/1016/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="sibir24" tvg-name="Сибирь 24" tvg-logo="https://i.imgur.com/jgwQPl0.png" group-title="Региональные",Сибирь 24 (Новосибирск)
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/novosibirsk/sibir24-hd/index.m3u8
+
+#EXTINF:-1 tvg-id="rentv" tvg-logo="http://epg.one/img2/18.png" group-title="Федеральные" ,Рен ТВ
+#EXTVLCOPT:http-user-agent=WINK/1.40.1 (AndroidTV/9) HlsWinkPlayer
+http://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV/variant.m3u8
+
+#EXTINF:-1 tvg-id="Channel5" tvg-name="Пятый канал" tvg-logo="https://i.imgur.com/KPXMa3U.png" group-title="Федеральные",Пятый канал
+http://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8
+
+
+
+
+
+
+
+
+
+
