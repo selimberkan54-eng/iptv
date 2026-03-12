@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://epg.it999.ru/edem.xml.gz", #EXTM3U url-tvg="https://iptvx.one/epg/epg.xml.gz"
+6#EXTM3U url-tvg="https://epg.it999.ru/edem.xml.gz", #EXTM3U url-tvg="https://iptvx.one/epg/epg.xml.gz"
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/RUSX0rX.png" group-title="Федеральные", Первый канал
 https://edge1.1internet.tv/dash-live2/streams/1tv-dvr/1tvdash.mpd
@@ -36,6 +36,144 @@ http://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV/variant.m3u8
 
 #EXTINF:-1 tvg-id="Channel5" tvg-name="Пятый канал" tvg-logo="https://i.imgur.com/KPXMa3U.png" group-title="Федеральные",Пятый канал
 http://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  ННТВ
+http://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R02_NNTV/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ
+https://livetv.mylifeisgood.net.ru/channels/ntvhd.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+1)
+https://rt-vlg-saratov-htlive.cdn.ngenix.net/hls/CH_R03_OTT_VLG_SARATOV_NTV/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+2)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV_2/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+4)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV_4/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+7)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV_7/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ HD
+https://cdn.ntv.ru/ntv0/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ
+https://livetv.mylifeisgood.net.ru/channels/ntvhd.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+1)
+https://rt-vlg-saratov-htlive.cdn.ngenix.net/hls/CH_R03_OTT_VLG_SARATOV_NTV/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+2)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV_2/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+4)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV_4/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+7)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV_7/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ-Мир
+http://87.76.32.36:8001/ntvmir
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый Космический
+https://stream8.cinerama.uz/1415/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый Крымский (720p)
+https://live1.1tvcrimea.ru/1tvcrimea.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый Псковский
+http://live-3.otcnet.ru/pskov/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый Республиканский
+https://streaming.televizor-24-tochka.ru/live/27.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый Тульский
+http://5.164.24.83/tula/1tv_hi/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый Ярославский
+https://yaroslavl.mediacdn.ru/cdn/pervyaroslavsk/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый городской (Киров)
+https://rt-vlg-kirov-htlive.cdn.ngenix.net/hls/CH_R03_PERVYGORODSKOY/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый городской (Омск)
+http://rt-sib-omsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_OMSK_1GORODSKOY/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый информационный
+https://ngtrk.dc.beltelecom.by/ngtrk/smil:informacionnyy.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый информационный HD
+https://edge50.dc.beltelecom.by/ngtrk/_definst_/smil:informacionnyy.smil/chunklist_w868240704_b5160000_sleng.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый канал
+https://edge1.1internet.tv/dash-live2/streams/1tv-dvr/1tvdash.mpd
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый канал +2
+http://rt-ural-ekt-htlive.cdn.ngenix.net/hls/CH_R03_OTT_1TV_EKT/variant.m3u8?version=2
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый крымский
+https://live1.1tvcrimea.ru/1tvcrimea.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Perviy_Kanal.svg/200px-Perviy_Kanal.svg.png" group-title="Общие",  Первый областной Орел
+http://rt-ct-orl-htlive.cdn.ngenix.net/hls/CH_R01_PERVOBL/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/5_kanal_logo.svg/200px-5_kanal_logo.svg.png" group-title="Общие",  Пятый канал
+http://31.131.141.195:8000/play/1050/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/5_kanal_logo.svg/200px-5_kanal_logo.svg.png" group-title="Общие",  Пятый канал +2
+https://rt-ural-ekt-htlive.cdn.ngenix.net/hls/CH_R03_OTT_5TV_EKT/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ren_TV_2018.svg/200px-Ren_TV_2018.svg.png" group-title="Общие",  Рен ТВ (+2)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV_2/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ren_TV_2018.svg/200px-Ren_TV_2018.svg.png" group-title="Общие",  Рен ТВ (+4)
+https://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV_4/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ren_TV_2018.svg/200px-Ren_TV_2018.svg.png" group-title="Общие",  Рен ТВ (+7)
+https://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV_7/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ren_TV_2018.svg/200px-Ren_TV_2018.svg.png" group-title="Общие",  Рен ТВ Int.
+http://cdn4.skygo.mn/live/disk1/RenTV/HLSv3-FTA/RenTV.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Russia-1.svg/200px-Russia-1.svg.png" group-title="Общие",  Россия 1
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Russia-1.svg/200px-Russia-1.svg.png" group-title="Общие",  Россия 1 (+1)
+http://rt-vlg-saratov-htlive.cdn.ngenix.net/hls/CH_R04_OTT_VLG_SARATOV_ROSSIA1/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Russia-1.svg/200px-Russia-1.svg.png" group-title="Общие",  Россия 1 (+2)
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/2/russia1-hd/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Russia-1.svg/200px-Russia-1.svg.png" group-title="Общие",  Россия 1 (+3)
+http://rt-sib-omsk-htlive.cdn.ngenix.net/hls/CH_R04_OTT_SIB_OMSK_ROSSIA1_OMSKOBL/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Russia-1.svg/200px-Russia-1.svg.png" group-title="Общие",  Россия 1 (+4)
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/4/russia1-hd/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+1)
+https://rt-vlg-saratov-htlive.cdn.ngenix.net/hls/CH_R03_OTT_VLG_SARATOV_NTV/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+2)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV_2/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+4)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV_4/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ (+7)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV_7/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  НТВ HD
+https://cdn.ntv.ru/ntv0/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Russia-1.svg/200px-Russia-1.svg.png" group-title="Общие",  Россия 1 (-1)
+https://rt-nw-klgr-htlive.cdn.ngenix.net/hls/CH_R04_OTT_NW_KLGR_ROSSIA1/variant.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Russia-1.svg/200px-Russia-1.svg.png" group-title="Общие",  Россия 1 HD
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Russia-1.svg/200px-Russia-1.svg.png" group-title="Общие",  Россия 1 HD (Архангельск)
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/arhangelsk/russia1-hd/index.m3u8
 
 
 
