@@ -1,3 +1,6 @@
+#EXTM3U
+#EXTINF:-1 group-title="Разное",#Riccanza – Pluto TV
+
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  ННТВ
 http://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R02_NNTV/variant.m3u8
 
