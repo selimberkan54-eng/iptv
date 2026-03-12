@@ -1,42 +1,3 @@
-6#EXTM3U url-tvg="https://epg.it999.ru/edem.xml.gz", #EXTM3U url-tvg="https://iptvx.one/epg/epg.xml.gz"
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/RUSX0rX.png" group-title="Федеральные", Первый канал
-https://edge1.1internet.tv/dash-live2/streams/1tv-dvr/1tvdash.mpd
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Osd2JHL.png" group-title="Федеральные",Россия 1
-https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/rossia-24.png" group-title="Информационные", Россия 24
-https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia24-hd/720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/kultura.png" group-title="Познавательные", Россия К
-http://vgtrkregion-reg.cdnvideo.ru/vgtrk/4/kultura-hd/index.m3u8
-
-#EXTINF:-1 tvg-logo="http://rafail1982.uz/logo/НТВ.png" group-title="Федеральные", НТВ
-https://stream8.cinerama.uz/1023/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-id="tvcentr" tvg-name="ТВ Центр" tvg-logo="https://iptvx.one/picons/tvcentr.png" group-title="Федеральные",ТВ Центр
-https://tvc-hls.cdnvideo.ru/tvc-res/smil:vd9221.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/zvezda.png" group-title="Федеральные",  Звезда HD
-http://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist_hdhigh.m3u8
-
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/mir.png" group-title="Федеральные", Мир
-http://a0925677.xsph.ru/hls/T2/CH_MIRHD.m3u8
-
-#EXTINF:-1 tvg-id="360news" tvg-name="360новости" tvg-logo="https://iptvx.one/picons/360-news.png" group-title="Информационные", 360° Новости
-https://live-vgtrksmotrim.cdnvideo.ru/vgtrksmotrim/smotrim-live-03-srt.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="sibir24" tvg-name="Сибирь 24" tvg-logo="https://i.imgur.com/jgwQPl0.png" group-title="Региональные",Сибирь 24 (Новосибирск)
-https://vgtrkregion-reg.cdnvideo.ru/vgtrk/novosibirsk/sibir24-hd/index.m3u8
-
-#EXTINF:-1 tvg-id="rentv" tvg-logo="http://epg.one/img2/18.png" group-title="Федеральные" ,Рен ТВ
-#EXTVLCOPT:http-user-agent=WINK/1.40.1 (AndroidTV/9) HlsWinkPlayer
-http://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV/variant.m3u8
-
-#EXTINF:-1 tvg-id="Channel5" tvg-name="Пятый канал" tvg-logo="https://i.imgur.com/KPXMa3U.png" group-title="Федеральные",Пятый канал
-http://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8
-
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NTV_2016.svg/200px-NTV_2016.svg.png" group-title="Общие",  ННТВ
 http://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R02_NNTV/variant.m3u8
 
@@ -174,13 +135,4 @@ https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Russia-1.svg/200px-Russia-1.svg.png" group-title="Общие",  Россия 1 HD (Архангельск)
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/arhangelsk/russia1-hd/index.m3u8
-
-
-
-
-
-
-
-
-
 
